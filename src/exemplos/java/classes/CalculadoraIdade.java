@@ -5,6 +5,8 @@
  */
 package exemplos.java.classes;
 
+import java.util.Calendar;
+
 /**
  *
  * @author everton
@@ -96,7 +98,7 @@ public class CalculadoraIdade extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         int ano = Integer.parseInt(String.valueOf(txtNascimento.getValue()));
-        int idade = 2019 - ano;
+        int idade = (Calendar.getInstance().get(Calendar.YEAR) - ano);
         lblResultado.setText(Integer.toString(idade));
     }//GEN-LAST:event_btnCalcularActionPerformed
 
